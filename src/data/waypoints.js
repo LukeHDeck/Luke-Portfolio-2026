@@ -144,11 +144,7 @@ export const sectionContent = {
       },
       {
         label: 'Design & Automation',
-        items: ['Blender (3D Terrain)', 'Adobe Creative Suite', 'Figma', 'Data Visualization', 'UX/UI Design'],
-      },
-      {
-        label: 'AI & Workflows',
-        items: ['Prompt Engineering', 'Generative AI', 'AI Agents', 'LLMs', 'n8n'],
+        items: ['Blender (3D Terrain)', 'Adobe Creative Suite', 'Figma', 'Data Visualization', 'UX/UI Design', 'n8n'],
       },
     ],
   },
@@ -182,7 +178,7 @@ export const sectionContent = {
     ],
     results: [],
     tags: ['Mapbox GL JS', 'GIS Data Management', 'Cartography', 'Real Estate UX'],
-    featuredImage: 'placeholder',
+    featuredImage: '/content/sunbridge/CleanShot 2026-03-03 at 09.33.48@2x.png',
     videoUrl: null,
     gallery: [],
     liveUrl: 'https://sunbridgefl.com/Interactive-Map/',
