@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 import { useMapbox } from '../hooks/useMapbox';
 import { useWebGLSupport } from '../hooks/useWebGLSupport';
 import { waypoints, getAllWaypointsFlat } from '../data/waypoints';
-import { flyToWaypoint, setupWaypointMarkers } from '../utils/mapHelpers';
+import { flyToWaypoint, setupWaypointMarkers, filterMarkersForSection } from '../utils/mapHelpers';
 import MapNav from './MapNav';
 import ModeToggle from './ModeToggle';
 import LoadingState from './shared/LoadingState';
@@ -324,6 +324,7 @@ function MapExperience() {
       const wp = waypoints[index];
       const target = childIndex !== null && wp.children ? wp.children[childIndex] : wp;
 
+      filterMarkersForSection(map, wp.id);
       flyAndShowPanel(map, target);
     }, 400); // Match collapse animation duration
   }, [activeIndex, activeChildIndex, flyAndShowPanel]);

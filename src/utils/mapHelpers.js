@@ -4,7 +4,7 @@
  */
 
 import { createPulsingDot } from './pulsingDot';
-import { getAllWaypointsFlat } from '../data/waypoints';
+import { getAllWaypointsFlat, waypoints } from '../data/waypoints';
 
 /**
  * Fly the map camera to a waypoint with smooth easing.
@@ -111,6 +111,13 @@ export function setupWaypointMarkers(map) {
 
   const allWaypoints = getAllWaypointsFlat();
 
+  // Build a set of case study IDs for O(1) lookup
+  const caseStudiesWp = waypoints.find(wp => wp.id === 'case-studies');
+  const caseStudyIds = new Set(['case-studies']);
+  if (caseStudiesWp?.children) {
+    caseStudiesWp.children.forEach(c => caseStudyIds.add(c.id));
+  }
+
   const geojson = {
     type: 'FeatureCollection',
     features: allWaypoints.map((wp) => ({
@@ -123,6 +130,7 @@ export function setupWaypointMarkers(map) {
         id: wp.id,
         title: wp.title,
         description: wp.description,
+        group: caseStudyIds.has(wp.id) ? 'case-studies' : 'other',
       },
     })),
   };
@@ -143,4 +151,25 @@ export function setupWaypointMarkers(map) {
       'icon-size': 0.75,
     },
   });
+}
+
+/**
+ * Filter waypoint markers based on the active section.
+ * When on case-studies, only case study markers are shown.
+ * For all other sections, all markers are visible.
+ *
+ * @param {mapboxgl.Map} map - The Mapbox map instance
+ * @param {string} sectionId - The id of the active waypoint section
+ */
+export function filterMarkersForSection(map, sectionId) {
+  if (!map || map._removed) return;
+
+  const layerId = 'waypoint-pulsing-dots';
+  if (!map.getLayer(layerId)) return;
+
+  if (sectionId === 'case-studies') {
+    map.setFilter(layerId, ['==', ['get', 'group'], 'case-studies']);
+  } else {
+    map.setFilter(layerId, null);
+  }
 }
