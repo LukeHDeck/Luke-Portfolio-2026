@@ -109,12 +109,14 @@
 
 /* Always show labels for parent waypoints on desktop */
 .map-nav__group > .map-nav__dot > .map-nav__tooltip {
-  opacity: 0.4;
+  opacity: 0.6;
   transform: translateX(0);
   background: none;
   border: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .map-nav__group > .map-nav__dot--active > .map-nav__tooltip {
