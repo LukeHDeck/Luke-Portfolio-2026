@@ -203,7 +203,7 @@ export const sectionContent = {
     ],
     results: [],
     tags: ['Mapbox GL JS', 'GIS Data Management', 'Scrollytelling', 'Frontend Collaboration'],
-    featuredImage: 'placeholder',
+    featuredImage: '/content/lakewood-ranch/CleanShot 2026-03-03 at 09.57.33@2x.png',
     videoUrl: null,
     gallery: [],
     liveUrl: 'https://lakewoodranch.com/around-the-area/community-maps/',
