@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sunbridge",
+    "title": "Sunbridge",
+    "subtitle": "Homefinder Map Refresh (2025)",
+    "overview": "In early 2025, I led the complete refresh of the interactive Sunbridge Homefinder map, modernizing a longstanding community map to showcase evolving neighborhoods and amenities.",
+    "resultHighlight": "Live interactive map refresh with stronger amenity detail and clearer navigation.",
+    "tags": ["Mapbox GL JS", "GIS Data Management", "Cartography", "Real Estate UX"]
+  },
+  {
+    "id": "lakewood-ranch",
+    "title": "Lakewood Ranch",
+    "subtitle": "Community & Selector Map Experiences",
+    "overview": "I led GIS data management, base map development, and interactive storytelling experiences for the Lakewood Ranch Community and Selector maps across one of the largest master-planned communities in the United States.",
+    "resultHighlight": "Scrollytelling and custom mapping for a 32,000-acre community experience.",
+    "tags": ["Mapbox GL JS", "GIS Data Management", "Scrollytelling", "Frontend Collaboration"]
+  },
+  {
+    "id": "30dmc-spaceflight",
+    "title": "US Spaceflight History",
+    "subtitle": "30 Day Map Challenge - 8-Bit Space Launch Visualization",
+    "overview": "An interactive retro-styled visualization of 65 years of United States spaceflight history, with each launch rendered as a 3D arch soaring from the planet surface.",
+    "tags": ["Mapbox GL JS", "WebGL", "Data Visualization"]
+  },
+  {
+    "id": "30dmc-traffic",
+    "title": "Rush Hour Traffic Simulation",
+    "subtitle": "30 Day Map Challenge - Real-Time Vehicle Simulation",
+    "overview": "A real-time traffic simulation where every vehicle makes independent decisions each second - monitoring spacing, responding to traffic signals, and adjusting acceleration and braking.",
+    "tags": ["Mapbox GL JS", "Simulation", "JavaScript"]
+  },
+  {
+    "id": "30dmc-multifamily",
+    "title": "Multifamily Community Layers",
+    "subtitle": "30 Day Map Challenge - Multi-Zoom Visualization",
+    "overview": "A layered visualization of a multifamily residential community that reveals increasing detail at each zoom level - from parking lots down to individual unit availability.",
+    "tags": ["Mapbox GL JS", "Real Estate", "Data Visualization"]
+  },
+  {
+    "id": "30dmc-tectonic",
+    "title": "Global Tectonic Structure",
+    "subtitle": "30 Day Map Challenge - Lava-Style Visualization",
+    "overview": "A cinematic lava-style thematic map layering global microplates, major fault zones, and plate interfaces over shaded relief.",
+    "tags": ["Mapbox GL JS", "USGS Data", "Data Visualization"]
+  }
+]

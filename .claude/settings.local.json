@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npx vite build)",
+      "Bash(curl -s http://localhost:3001/src/main.jsx)",
+      "Bash(lsof -ti:3001)",
+      "Bash(xargs kill)",
+      "Bash(lsof -ti:3000)",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(domain:docs.mapbox.com)",
+      "WebFetch(domain:simonpan.com)",
+      "WebFetch(domain:sunbridgefl.com)",
+      "Bash(gh auth status)",
+      "Bash(brew install gh)",
+      "Bash(gh auth login --web --git-protocol https)",
+      "Bash(git init)",
+      "Bash(git add -A)"
+    ]
+  }
+}

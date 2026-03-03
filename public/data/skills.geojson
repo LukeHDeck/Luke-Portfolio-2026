@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Mapbox GL JS", "category": "mapping", "level": 5 },
+      "geometry": { "type": "Point", "coordinates": [10, 62] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Mapbox Studio", "category": "mapping", "level": 5 },
+      "geometry": { "type": "Point", "coordinates": [14, 64] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "QGIS", "category": "mapping", "level": 4 },
+      "geometry": { "type": "Point", "coordinates": [18, 61] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "ArcGIS", "category": "mapping", "level": 3 },
+      "geometry": { "type": "Point", "coordinates": [22, 63] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "GeoJSON", "category": "data", "level": 5 },
+      "geometry": { "type": "Point", "coordinates": [12, 58] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "JavaScript", "category": "development", "level": 5 },
+      "geometry": { "type": "Point", "coordinates": [16, 56] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "React", "category": "development", "level": 4 },
+      "geometry": { "type": "Point", "coordinates": [20, 58] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "CSS", "category": "development", "level": 4 },
+      "geometry": { "type": "Point", "coordinates": [24, 56] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Node.js", "category": "development", "level": 3 },
+      "geometry": { "type": "Point", "coordinates": [13, 54] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Python", "category": "development", "level": 3 },
+      "geometry": { "type": "Point", "coordinates": [17, 52] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Blender", "category": "design", "level": 3 },
+      "geometry": { "type": "Point", "coordinates": [21, 54] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "n8n", "category": "automation", "level": 4 },
+      "geometry": { "type": "Point", "coordinates": [25, 60] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Adobe Creative Suite", "category": "design", "level": 4 },
+      "geometry": { "type": "Point", "coordinates": [11, 66] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Data Visualization", "category": "design", "level": 4 },
+      "geometry": { "type": "Point", "coordinates": [19, 66] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "UX Design", "category": "design", "level": 3 },
+      "geometry": { "type": "Point", "coordinates": [15, 68] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "CAD-to-GIS Conversion", "category": "data", "level": 4 },
+      "geometry": { "type": "Point", "coordinates": [23, 65] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "HTML", "category": "development", "level": 5 },
+      "geometry": { "type": "Point", "coordinates": [26, 58] }
+    }
+  ]
+}

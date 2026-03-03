@@ -1,0 +1,256 @@
+/* ==========================================================================
+   MapNav — Vertical Dot Navigation
+   ========================================================================== */
+
+.map-nav {
+  position: fixed;
+  right: var(--space-lg);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.map-nav__track {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 14px 0;
+}
+
+/* Connecting line behind dots */
+.map-nav__track::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+}
+
+/* --- Dot Button --- */
+.map-nav__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.map-nav__dot-inner {
+  width: var(--nav-dot-size);
+  height: var(--nav-dot-size);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+/* Active state */
+.map-nav__dot--active .map-nav__dot-inner {
+  background: var(--color-accent);
+  transform: scale(1.4);
+}
+
+/* Hover state */
+.map-nav__dot:hover .map-nav__dot-inner {
+  background: var(--color-accent);
+  transform: scale(1.2);
+}
+
+.map-nav__dot--active:hover .map-nav__dot-inner {
+  transform: scale(1.4);
+}
+
+/* Focus-visible for keyboard navigation */
+.map-nav__dot:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+/* --- Tooltip --- */
+.map-nav__tooltip {
+  position: absolute;
+  right: 100%;
+  margin-right: var(--space-sm);
+  padding: 4px 10px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Hidden by default */
+  opacity: 0;
+  transform: translateX(8px);
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.map-nav__dot:hover .map-nav__tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- Waypoint Groups (parent + children wrapper) --- */
+.map-nav__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Expandable Children --- */
+.map-nav__children {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-top: var(--space-sm);
+  animation: navChildrenExpand 0.35s ease-out both;
+}
+
+@keyframes navChildrenExpand {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+    transform: translateY(0);
+  }
+}
+
+/* Child dots — smaller visual, same touch target */
+.map-nav__dot--child {
+  width: 32px;
+  height: 32px;
+}
+
+.map-nav__dot--child .map-nav__dot-inner {
+  width: 6px;
+  height: 6px;
+}
+
+.map-nav__dot--child.map-nav__dot--active .map-nav__dot-inner {
+  transform: scale(1.5);
+}
+
+/* --- Inline Mobile Nav (horizontal dots inside ContentPanel) --- */
+.content-panel__nav {
+  display: none; /* Hidden on desktop */
+}
+
+@media (max-width: 768px) {
+  /* Hide the external vertical nav on mobile */
+  .map-nav {
+    display: none;
+  }
+
+  /* Show the inline horizontal nav inside the panel */
+  .content-panel__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: var(--space-sm);
+  }
+
+  .content-panel__nav-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    height: 28px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .content-panel__nav-dot-inner {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    flex-shrink: 0;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    animation: navDotPulse 2.4s ease-in-out infinite;
+  }
+
+  /* Stagger each dot so they ripple in sequence */
+  .content-panel__nav-dot:nth-child(1) .content-panel__nav-dot-inner { animation-delay: 0s; }
+  .content-panel__nav-dot:nth-child(2) .content-panel__nav-dot-inner { animation-delay: 0.15s; }
+  .content-panel__nav-dot:nth-child(3) .content-panel__nav-dot-inner { animation-delay: 0.3s; }
+  .content-panel__nav-dot:nth-child(4) .content-panel__nav-dot-inner { animation-delay: 0.45s; }
+  .content-panel__nav-dot:nth-child(5) .content-panel__nav-dot-inner { animation-delay: 0.6s; }
+  .content-panel__nav-dot:nth-child(6) .content-panel__nav-dot-inner { animation-delay: 0.75s; }
+
+  .content-panel__nav-dot--active .content-panel__nav-dot-inner {
+    background: var(--color-accent);
+    transform: scale(1.4);
+    animation: none;
+  }
+
+  @keyframes navDotPulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50%      { opacity: 1;   transform: scale(1.25); }
+  }
+
+  .content-panel__nav-dot:hover .content-panel__nav-dot-inner {
+    background: var(--color-accent);
+    transform: scale(1.2);
+  }
+
+  .content-panel__nav-dot--active:hover .content-panel__nav-dot-inner {
+    transform: scale(1.4);
+  }
+
+  /* Active section label */
+  .content-panel__nav-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text);
+    letter-spacing: var(--letter-spacing-wide);
+    white-space: nowrap;
+    animation: navLabelIn 300ms ease-out both;
+  }
+
+  @keyframes navLabelIn {
+    from {
+      opacity: 0;
+      transform: translateX(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Hide redundant section headers inside the panel on mobile */
+  .content-panel .section-header,
+  .content-panel .case-study-list__heading {
+    display: none;
+  }
+}

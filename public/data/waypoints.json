@@ -1,0 +1,58 @@
+[
+  {
+    "id": "about",
+    "title": "About",
+    "center": [-30, 40],
+    "zoom": 4,
+    "pitch": 45,
+    "bearing": 0
+  },
+  {
+    "id": "skills",
+    "title": "Skills",
+    "center": [15, 60],
+    "zoom": 3.5,
+    "pitch": 50,
+    "bearing": -20
+  },
+  {
+    "id": "certificates",
+    "title": "Certificates",
+    "center": [20, 55],
+    "zoom": 4,
+    "pitch": 45,
+    "bearing": 10
+  },
+  {
+    "id": "case-studies",
+    "title": "Case Studies",
+    "center": [120, 35],
+    "zoom": 3,
+    "pitch": 40,
+    "bearing": 30
+  },
+  {
+    "id": "process",
+    "title": "Process",
+    "center": [-60, -15],
+    "zoom": 3.5,
+    "pitch": 45,
+    "bearing": -10
+  },
+  {
+    "id": "testimonials",
+    "title": "Testimonials",
+    "center": [135, -25],
+    "zoom": 3.5,
+    "pitch": 40,
+    "bearing": 20
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "center": [-120, 37],
+    "zoom": 4,
+    "pitch": 50,
+    "bearing": 0
+  }
+]
