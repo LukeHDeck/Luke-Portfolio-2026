@@ -92,23 +92,35 @@
 }
 
 @media (min-width: 769px) {
+  .scroll-experience__hero {
+    position: relative;
+  }
+
   .scroll-indicator {
     display: block;
-    margin-top: var(--space-2xl);
-    color: var(--color-text-tertiary);
-    opacity: 0.5;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-text-secondary);
+    opacity: 0.7;
     animation: scroll-bounce 2s ease-in-out infinite;
+  }
+
+  .scroll-indicator svg {
+    width: 32px;
+    height: 32px;
   }
 }
 
 @keyframes scroll-bounce {
   0%, 100% {
-    transform: translateY(0);
-    opacity: 0.5;
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.7;
   }
   50% {
-    transform: translateY(8px);
-    opacity: 0.3;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0.4;
   }
 }
 
