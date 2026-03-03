@@ -25,6 +25,13 @@ function About({ compact = false }) {
           <span className="section-about__stat-label">In Production</span>
         </div>
       </div>
+
+      {/* Desktop scroll indicator */}
+      <div className="scroll-indicator" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
     </section>
   );
 }
