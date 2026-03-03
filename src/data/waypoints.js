@@ -144,7 +144,7 @@ export const sectionContent = {
       },
       {
         label: 'Design & Automation',
-        items: ['Blender (3D Terrain)', 'Adobe Creative Suite', 'Figma', 'Data Visualization', 'UX/UI Design', 'n8n'],
+        items: ['Blender', 'Adobe Creative Suite', 'Figma', 'Data Visualization', 'UX/UI Design', 'n8n'],
       },
     ],
   },
