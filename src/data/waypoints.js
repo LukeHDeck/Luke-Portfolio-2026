@@ -275,9 +275,10 @@ export const sectionContent = {
     solution: [
       { heading: 'Lava-Style Rendering', detail: 'Distinctive warm color palette reminiscent of molten material, highlighting geological features with a cinematic aesthetic.', media: null },
       { heading: 'Multi-Layer Integration', detail: 'Three primary datasets layered together: USGS tectonic plates and fault zones, Natural Earth land boundaries at 10m resolution, and Natural Earth shaded relief raster.', media: null },
+      { heading: 'Motion Design', detail: 'Adobe After Effects used to add cinematic animations, bringing the tectonic visualization to life with dynamic motion and polish.', media: null },
     ],
     results: [],
-    tags: ['Mapbox GL JS', 'USGS Data', 'Data Visualization', 'Creative'],
+    tags: ['Mapbox GL JS', 'USGS Data', 'Data Visualization', 'Adobe After Effects', 'Creative'],
     featuredImage: '/content/30dmc-tectonic/tectonic 1.png',
     videoUrl: null,
     gallery: [],
