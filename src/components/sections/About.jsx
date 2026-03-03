@@ -24,11 +24,6 @@ function About({ compact = false }) {
           <span className="section-about__stat-number">115+</span>
           <span className="section-about__stat-label">In Production</span>
         </div>
-        <div className="section-about__stat-divider" />
-        <div className="section-about__stat">
-          <span className="section-about__stat-number">XX</span>
-          <span className="section-about__stat-label">Placeholder</span>
-        </div>
       </div>
     </section>
   );

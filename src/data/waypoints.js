@@ -132,8 +132,8 @@ export function getAllWaypointsFlat() {
 export const sectionContent = {
   about: {
     heading: 'Luke Decker',
-    subheading: 'Map Designer & Cartographic Strategist',
-    body: 'I replace static PDFs and manual sales workflows with interactive mapping platforms - helping real estate teams sell faster with fewer support calls and shorter sales cycles.',
+    subheading: 'Map Designer, Cartography, GIS Engineer',
+    body: 'I replace static PDFs and manual data-visualization workflows with interactive mapping experiences, with 4+ years of experience in digital cartography.',
   },
   skills: {
     heading: 'Skills',

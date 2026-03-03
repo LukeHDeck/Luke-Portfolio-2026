@@ -31,7 +31,7 @@ function Landing() {
       <div className="landing__content">
         <div className="landing__header">
           <h1 className="landing__name">Luke Decker</h1>
-          <p className="landing__title">Map Designer & Cartographic Strategist</p>
+          <p className="landing__title">Map Designer, Cartography, GIS Engineer</p>
         </div>
 
         <div className="landing__modes">
