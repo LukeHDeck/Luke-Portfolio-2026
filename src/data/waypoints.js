@@ -164,7 +164,7 @@ export const sectionContent = {
     subtitle: 'Homefinder Map Refresh (2025)',
     overview: 'In early 2025, I led the complete refresh of the interactive Sunbridge Homefinder map, modernizing a longstanding community map to showcase Sunbridge\'s evolving neighborhoods and amenities.',
     challenge: 'Sunbridge had a functional but dated interactive map that needed more current data, stronger cartography, clearer navigation, and coordinated alignment across marketing, product, customer service, and internal stakeholders without disrupting the existing digital experience.',
-    role: 'Lead GIS and cartographic designer, responsible for client communication, data management, Mapbox styling, visual redesign, and cross-functional coordination across product, leadership, engineering, marketing, and customer service.',
+    role: 'Lead GIS and cartographic designer at Cecilian Partners, responsible for client communication, data management, Mapbox styling, visual redesign, and cross-functional coordination across product, leadership, engineering, marketing, and customer service.',
     solution: [
       { heading: 'Enhanced Environmental Identity', detail: 'Introduced custom 2D tree sprites to better represent green space and visually reinforce parks, trails, and natural areas without relying on heavier 3D assets.', media: null },
       { heading: 'Roadway Detail and Infrastructure Clarity', detail: 'Added road centerlines, labels, crosswalk markings, and parking lot striping so circulation and built infrastructure read clearly at interactive map scale.', media: null },
@@ -189,7 +189,7 @@ export const sectionContent = {
     subtitle: 'Community & Selector Map Experiences',
     overview: 'I led GIS data management, base map development, and interactive storytelling experiences for the Lakewood Ranch Community and Selector maps, helping users explore one of the largest master-planned communities in the United States.',
     challenge: 'Lakewood Ranch spans more than 32,000 acres with a complex mix of villages, amenities, residential zones, and points of interest, so the experience had to balance large-scale context, neighborhood-level detail, scrollytelling journeys, and stakeholder expectations without overwhelming users.',
-    role: 'Responsible for complete GIS data management across the community, Mapbox base map design, neighborhood and infrastructure mapping, scrollytelling tour creation, and close collaboration with frontend engineers on interaction logic and performance.',
+    role: 'Responsible for complete GIS data management across the community at Cecilian Partners, including Mapbox base map design, neighborhood and infrastructure mapping, scrollytelling tour creation, and close collaboration with frontend engineers on interaction logic and performance.',
     solution: [
       { heading: 'Large-Scale GIS Data Management', detail: 'Standardized and maintained datasets for neighborhood boundaries, amenities, points of interest, circulation infrastructure, villages, and residential zones so the mapping experience could scale reliably.', media: null },
       { heading: 'Tailored Base Map Design', detail: 'Built a custom Mapbox style that emphasized community hierarchy, legible labels across zoom levels, and clear visual separation between categories of features.', media: null },
