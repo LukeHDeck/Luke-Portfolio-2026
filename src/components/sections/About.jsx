@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { sectionContent } from '../../data/waypoints';
 
 /**
@@ -6,6 +7,15 @@ import { sectionContent } from '../../data/waypoints';
  */
 function About({ compact = false }) {
   const { heading, subheading, body } = sectionContent.about;
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > window.innerHeight * 0.5);
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <section className={`section-about ${compact ? 'section-about--compact' : ''}`} id="about">
@@ -27,7 +37,7 @@ function About({ compact = false }) {
       </div>
 
       {/* Desktop scroll indicator */}
-      <div className="scroll-indicator" aria-hidden="true">
+      <div className={`scroll-indicator ${scrolled ? 'scroll-indicator--hidden' : ''}`} aria-hidden="true">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="6 9 12 15 18 9" />
         </svg>
