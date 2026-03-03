@@ -107,6 +107,25 @@
     transform var(--transition-fast);
 }
 
+/* Always show labels for parent waypoints on desktop */
+.map-nav__group > .map-nav__dot > .map-nav__tooltip {
+  opacity: 0.4;
+  transform: translateX(0);
+  background: none;
+  border: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.map-nav__group > .map-nav__dot--active > .map-nav__tooltip {
+  opacity: 1;
+}
+
+.map-nav__group > .map-nav__dot:hover > .map-nav__tooltip {
+  opacity: 1;
+}
+
+/* Child dot tooltips remain hover-only */
 .map-nav__dot:hover .map-nav__tooltip {
   opacity: 1;
   transform: translateX(0);
