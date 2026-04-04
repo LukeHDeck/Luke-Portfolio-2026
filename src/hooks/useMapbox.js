@@ -1,8 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
-const MAPBOX_STYLE = 'mapbox://styles/deckdog/cmikq7w36000v01s03jrwbymo';
+import { MAPBOX_TOKEN, MAPBOX_STYLE, hasMapboxToken } from '../config/mapbox';
 
 /**
  * Custom hook for Mapbox GL JS map initialization and lifecycle management.
@@ -28,6 +26,13 @@ export function useMapbox(containerRef, options = {}) {
     // Bail out if WebGL isn't supported
     if (!mapboxgl.supported()) {
       setMapError('WebGL is not supported by your browser.');
+      return;
+    }
+
+    if (!hasMapboxToken()) {
+      setMapError(
+        'Missing Mapbox token. Create .env.local in the project root with VITE_MAPBOX_TOKEN=your_public_token (see account.mapbox.com). Restart the dev server after saving.',
+      );
       return;
     }
 

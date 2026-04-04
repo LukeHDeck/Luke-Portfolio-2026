@@ -3,16 +3,16 @@
     "id": "sunbridge",
     "title": "Sunbridge",
     "subtitle": "Homefinder Map Refresh (2025)",
-    "overview": "In early 2025, I led the complete refresh of the interactive Sunbridge Homefinder map, modernizing a longstanding community map to showcase evolving neighborhoods and amenities.",
-    "resultHighlight": "Live interactive map refresh with stronger amenity detail and clearer navigation.",
+    "overview": "Interactive homefinder mapping for a master-planned Florida community—Mapbox cartography for discovery and planning.",
+    "resultHighlight": "Cecilian Partners — details available on request.",
     "tags": ["Mapbox GL JS", "GIS Data Management", "Cartography", "Real Estate UX"]
   },
   {
     "id": "lakewood-ranch",
     "title": "Lakewood Ranch",
     "subtitle": "Community & Selector Map Experiences",
-    "overview": "I led GIS data management, base map development, and interactive storytelling experiences for the Lakewood Ranch Community and Selector maps across one of the largest master-planned communities in the United States.",
-    "resultHighlight": "Scrollytelling and custom mapping for a 32,000-acre community experience.",
+    "overview": "Community and selector map experiences at regional scale—custom GIS, base maps, and guided exploration.",
+    "resultHighlight": "Cecilian Partners — details available on request.",
     "tags": ["Mapbox GL JS", "GIS Data Management", "Scrollytelling", "Frontend Collaboration"]
   },
   {

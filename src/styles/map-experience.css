@@ -285,6 +285,14 @@
   margin-bottom: var(--space-lg);
 }
 
+.case-study-showcase__on-request {
+  font-size: var(--font-size-xs);
+  font-style: italic;
+  color: var(--color-text-tertiary);
+  line-height: var(--line-height-base);
+  margin: calc(-1 * var(--space-md)) 0 var(--space-lg);
+}
+
 /* Labeled sections (Challenge, Role, Solution, Results) */
 .case-study-showcase__section {
   margin-bottom: var(--space-lg);
