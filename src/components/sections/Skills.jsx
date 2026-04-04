@@ -2,7 +2,7 @@ import { sectionContent } from '../../data/waypoints';
 import SectionHeader from '../shared/SectionHeader';
 
 /**
- * Skills section — grouped by category with labels.
+ * Skills section - grouped by category with labels.
  */
 function Skills({ compact = false }) {
   const { heading, categories } = sectionContent.skills;

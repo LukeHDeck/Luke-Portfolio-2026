@@ -38,7 +38,7 @@ export function createPulsingDot(map, options = {}) {
 
       ctx.clearRect(0, 0, this.width, this.height);
 
-      // Outer pulsing ring — fades out as it expands
+      // Outer pulsing ring - fades out as it expands
       ctx.beginPath();
       ctx.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(${pulseColor}, ${1 - t})`;

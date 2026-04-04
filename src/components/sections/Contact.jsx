@@ -2,7 +2,7 @@ import { sectionContent } from '../../data/waypoints';
 import SectionHeader from '../shared/SectionHeader';
 
 /**
- * Contact section — email CTA and social links.
+ * Contact section - email CTA and social links.
  */
 function Contact({ compact = false }) {
   const { heading, email, links, message } = sectionContent.contact;

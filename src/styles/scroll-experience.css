@@ -834,7 +834,7 @@
     padding-bottom: var(--space-2xl);
   }
 
-  /* Mode toggle — keep label, top-right */
+  /* Mode toggle - keep label, top-right */
   .mode-toggle {
     top: var(--space-md);
     bottom: auto;

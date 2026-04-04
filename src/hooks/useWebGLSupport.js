@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 /**
  * Detects WebGL support and mobile viewport.
- * Used to gate the globe experience — if either check fails,
+ * Used to gate the globe experience - if either check fails,
  * the app defaults to the scroll experience.
  */
 export function useWebGLSupport() {

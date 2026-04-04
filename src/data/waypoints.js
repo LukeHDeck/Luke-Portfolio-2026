@@ -162,9 +162,9 @@ export const sectionContent = {
   'sunbridge': {
     title: 'Sunbridge',
     subtitle: 'Homefinder Map Refresh (2025)',
-    overview: 'Interactive homefinder mapping for a master-planned Florida community—using Mapbox to make neighborhoods, amenities, and circulation legible for discovery and planning.',
+    overview: 'Interactive homefinder mapping for a master-planned Florida community, using Mapbox to make neighborhoods, amenities, and circulation legible for discovery and planning.',
     detailsOnRequest: true,
-    detailsOnRequestNote: 'Cecilian Partners — details available on request.',
+    detailsOnRequestNote: 'Cecilian Partners - details available on request.',
     tags: ['Mapbox GL JS', 'GIS Data Management', 'Cartography', 'Real Estate UX'],
     featuredImage: '/content/sunbridge/CleanShot 2026-03-03 at 09.33.48@2x.png',
     videoUrl: null,
@@ -175,9 +175,9 @@ export const sectionContent = {
   'lakewood-ranch': {
     title: 'Lakewood Ranch',
     subtitle: 'Community & Selector Map Experiences',
-    overview: 'Community and selector map experiences for one of the largest master-planned communities in the United States—custom cartography, GIS, and guided exploration at multiple scales.',
+    overview: 'Community and selector map experiences for one of the largest master-planned communities in the United States, with custom cartography, GIS, and guided exploration at multiple scales.',
     detailsOnRequest: true,
-    detailsOnRequestNote: 'Cecilian Partners — details available on request.',
+    detailsOnRequestNote: 'Cecilian Partners - details available on request.',
     tags: ['Mapbox GL JS', 'GIS Data Management', 'Scrollytelling', 'Frontend Collaboration'],
     featuredImage: '/content/lakewood-ranch/CleanShot 2026-03-03 at 09.57.33@2x.png',
     videoUrl: null,

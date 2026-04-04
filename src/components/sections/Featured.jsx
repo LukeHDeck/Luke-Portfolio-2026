@@ -2,7 +2,7 @@ import { sectionContent } from '../../data/waypoints';
 import SectionHeader from '../shared/SectionHeader';
 
 /**
- * Featured section — videos and publications list.
+ * Featured section - videos and publications list.
  */
 function Featured({ compact = false }) {
   const { heading, items } = sectionContent.featured;

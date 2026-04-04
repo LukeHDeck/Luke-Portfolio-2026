@@ -3,7 +3,7 @@ import SectionHeader from '../shared/SectionHeader';
 import CaseStudyShowcase from './CaseStudyShowcase';
 
 /**
- * Case Studies section — project cards fetched from JSON.
+ * Case Studies section - project cards fetched from JSON.
  *
  * Card structure follows Simon Pan's homepage pattern:
  * Title → Subtitle → Result highlight → Tags

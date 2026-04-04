@@ -17,7 +17,7 @@ import Contact from './sections/Contact';
 import '../styles/map-experience.css';
 
 /**
- * Component map — resolves waypoint IDs to section components.
+ * Component map - resolves waypoint IDs to section components.
  * Individual case studies are resolved dynamically via CaseStudyShowcase.
  * The 'case-studies' parent is handled directly in ContentPanel as a simple list.
  */
@@ -130,7 +130,7 @@ function ErrorFallback({ error, onRetry, onRedirect }) {
 }
 
 /**
- * Map Experience — the globe-based portfolio experience.
+ * Map Experience - the globe-based portfolio experience.
  *
  * Manages:
  * - Full-viewport Mapbox globe with interactive controls

@@ -2,7 +2,7 @@ import { sectionContent } from '../../data/waypoints';
 import SectionHeader from '../shared/SectionHeader';
 
 /**
- * Certificates section — clean list layout.
+ * Certificates section - clean list layout.
  */
 function Certificates({ compact = false }) {
   const { heading, items } = sectionContent.certificates;

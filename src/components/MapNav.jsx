@@ -3,7 +3,7 @@ import '../styles/nav.css';
 /**
  * Navigation escape hatch for the map experience.
  * Vertical dot-based progress indicator visible at all times.
- * Each dot represents a waypoint/section — clicking triggers a flyTo.
+ * Each dot represents a waypoint/section - clicking triggers a flyTo.
  * Labels appear on hover next to each dot.
  *
  * Waypoints with children (e.g. Case Studies) show expandable sub-dots

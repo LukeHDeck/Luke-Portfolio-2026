@@ -3,16 +3,16 @@
     "id": "sunbridge",
     "title": "Sunbridge",
     "subtitle": "Homefinder Map Refresh (2025)",
-    "overview": "Interactive homefinder mapping for a master-planned Florida community—Mapbox cartography for discovery and planning.",
-    "resultHighlight": "Cecilian Partners — details available on request.",
+    "overview": "Interactive homefinder mapping for a master-planned Florida community, Mapbox cartography for discovery and planning.",
+    "resultHighlight": "Cecilian Partners - details available on request.",
     "tags": ["Mapbox GL JS", "GIS Data Management", "Cartography", "Real Estate UX"]
   },
   {
     "id": "lakewood-ranch",
     "title": "Lakewood Ranch",
     "subtitle": "Community & Selector Map Experiences",
-    "overview": "Community and selector map experiences at regional scale—custom GIS, base maps, and guided exploration.",
-    "resultHighlight": "Cecilian Partners — details available on request.",
+    "overview": "Community and selector map experiences at regional scale, custom GIS, base maps, and guided exploration.",
+    "resultHighlight": "Cecilian Partners - details available on request.",
     "tags": ["Mapbox GL JS", "GIS Data Management", "Scrollytelling", "Frontend Collaboration"]
   },
   {

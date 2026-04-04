@@ -5,7 +5,7 @@ import Globe from './Globe';
 import '../styles/landing.css';
 
 /**
- * Landing page — the first thing users see.
+ * Landing page - the first thing users see.
  * Full viewport with a decorative rotating globe background
  * and two mode selection options positioned in the lower third.
  */

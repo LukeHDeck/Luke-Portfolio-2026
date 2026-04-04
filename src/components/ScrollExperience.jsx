@@ -10,7 +10,7 @@ import ScrollNav from './ScrollNav';
 import '../styles/scroll-experience.css';
 
 /**
- * Scroll Experience — traditional, linear, dark-themed portfolio page.
+ * Scroll Experience - traditional, linear, dark-themed portfolio page.
  * All sections rendered in a single scrollable page with reveal animations.
  */
 function ScrollExperience() {

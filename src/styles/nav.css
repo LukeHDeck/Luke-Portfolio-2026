@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MapNav — Vertical Dot Navigation
+   MapNav - Vertical Dot Navigation
    ========================================================================== */
 
 .map-nav {
@@ -163,7 +163,7 @@
   }
 }
 
-/* Child dots — smaller visual, same touch target */
+/* Child dots - smaller visual, same touch target */
 .map-nav__dot--child {
   width: 32px;
   height: 32px;

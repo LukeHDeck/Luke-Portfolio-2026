@@ -2,7 +2,7 @@ import { sectionContent } from '../../data/waypoints';
 import SectionHeader from '../shared/SectionHeader';
 
 /**
- * Process section — four-step workflow breakdown.
+ * Process section - four-step workflow breakdown.
  * Data → Style → Automate → Deploy
  */
 function Process({ compact = false }) {

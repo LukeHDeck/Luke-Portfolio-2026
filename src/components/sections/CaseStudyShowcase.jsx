@@ -41,7 +41,7 @@ function MediaItem({ media, className = '' }) {
 }
 
 /**
- * Case Study Showcase — detailed view for an individual case study.
+ * Case Study Showcase - detailed view for an individual case study.
  * Used in the globe experience when a case study marker is clicked.
  *
  * Content follows a narrative arc:

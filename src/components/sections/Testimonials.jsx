@@ -2,7 +2,7 @@ import { sectionContent } from '../../data/waypoints';
 import SectionHeader from '../shared/SectionHeader';
 
 /**
- * Testimonials section — client and collaborator quotes.
+ * Testimonials section - client and collaborator quotes.
  */
 function Testimonials({ compact = false }) {
   const { heading, items } = sectionContent.testimonials;

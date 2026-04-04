@@ -109,7 +109,7 @@
   pointer-events: auto;
 }
 
-/* Body wrapper — transparent on desktop, animated on mobile */
+/* Body wrapper - transparent on desktop, animated on mobile */
 .content-panel__body {
   display: contents;
 }
@@ -152,7 +152,7 @@
   }
 }
 
-/* Panel scrollbar — inset so it doesn't overlap the border-radius */
+/* Panel scrollbar - inset so it doesn't overlap the border-radius */
 .content-panel::-webkit-scrollbar {
   width: 8px;
 }
@@ -220,7 +220,7 @@
   height: 24px;
 }
 
-/* Featured titles in panel — loosen line-height for multi-line readability */
+/* Featured titles in panel - loosen line-height for multi-line readability */
 .content-panel .featured-item__title {
   line-height: var(--line-height-snug);
 }
@@ -482,7 +482,7 @@
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Case Study List — simple clickable list for the parent panel */
+/* Case Study List - simple clickable list for the parent panel */
 .case-study-list__heading {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
@@ -750,7 +750,7 @@
     max-height: 50vh;
   }
 
-  /* On mobile the panel wrapper stays visible throughout all states —
+  /* On mobile the panel wrapper stays visible throughout all states -
      only the body animates. Override all panel-level state animations. */
   .content-panel--collapsing,
   .content-panel--hidden,

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 /**
- * Persistent mode toggle button — visible in both map and scroll experiences.
+ * Persistent mode toggle button - visible in both map and scroll experiences.
  * Allows switching between the two portfolio modes at any time.
  *
  * @param {'map' | 'scroll'} targetMode - Which mode to switch to

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { sectionContent } from '../../data/waypoints';
 
 /**
- * About section — introduction and bio.
+ * About section - introduction and bio.
  * Used in both map overlay panels and scroll experience.
  */
 function About({ compact = false }) {
