@@ -12,9 +12,11 @@ function Contact({ compact = false }) {
       {!compact && <SectionHeader title={heading} />}
       {message && <p className="section-contact__message">{message}</p>}
 
-      <a href={`mailto:${email}`} className="section-contact__email">
-        {email}
-      </a>
+      {email && (
+        <a href={`mailto:${email}`} className="section-contact__email">
+          {email}
+        </a>
+      )}
 
       <div className="section-contact__links">
         {links.map((link) => (
