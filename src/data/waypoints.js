@@ -315,7 +315,7 @@ export const sectionContent = {
   },
   contact: {
     heading: 'Contact',
-    email: 'lukehdeck@gmail.com',
+    email: '',
     links: [
       { label: 'LinkedIn', url: 'https://linkedin.com/in/luke-h-decker' },
     ],
