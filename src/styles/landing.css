@@ -31,6 +31,14 @@
   height: 100%;
 }
 
+/* Shown when VITE_MAPBOX_TOKEN is unset so the landing layout still looks intentional */
+.globe-container--placeholder {
+  background:
+    radial-gradient(circle at 35% 30%, rgba(120, 160, 220, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 70% 55%, rgba(80, 120, 180, 0.2) 0%, transparent 40%),
+    radial-gradient(ellipse 90% 85% at 50% 50%, #1a2744 0%, var(--color-bg) 72%);
+}
+
 /* --- Content Overlay --- */
 .landing__content {
   position: relative;

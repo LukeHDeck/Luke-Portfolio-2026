@@ -66,6 +66,8 @@ function CaseStudyShowcase({ caseStudyId, compact = false }) {
     gallery,
     liveUrl,
     liveLabel,
+    detailsOnRequest,
+    detailsOnRequestNote,
   } = data;
 
   return (
@@ -94,24 +96,25 @@ function CaseStudyShowcase({ caseStudyId, compact = false }) {
         <p className="case-study-showcase__overview">{overview}</p>
       )}
 
-      {/* The Challenge */}
-      {challenge && (
+      {detailsOnRequest && detailsOnRequestNote && (
+        <p className="case-study-showcase__on-request">{detailsOnRequestNote}</p>
+      )}
+
+      {!detailsOnRequest && challenge && (
         <div className="case-study-showcase__section">
           <h3 className="case-study-showcase__section-label">The Challenge</h3>
           <p className="case-study-showcase__section-body">{challenge}</p>
         </div>
       )}
 
-      {/* My Role */}
-      {role && (
+      {!detailsOnRequest && role && (
         <div className="case-study-showcase__section">
           <h3 className="case-study-showcase__section-label">My Role</h3>
           <p className="case-study-showcase__section-body">{role}</p>
         </div>
       )}
 
-      {/* Solution — each item can have inline media */}
-      {solution && solution.length > 0 && (
+      {!detailsOnRequest && solution && solution.length > 0 && (
         <div className="case-study-showcase__section">
           <h3 className="case-study-showcase__section-label">Solution</h3>
           <div className="case-study-showcase__solution-list">
@@ -133,8 +136,7 @@ function CaseStudyShowcase({ caseStudyId, compact = false }) {
         </div>
       )}
 
-      {/* Impact */}
-      {impact && (
+      {!detailsOnRequest && impact && (Array.isArray(impact) ? impact.length > 0 : true) && (
         <div className="case-study-showcase__section">
           <h3 className="case-study-showcase__section-label">Impact</h3>
           {Array.isArray(impact) ? (
@@ -150,7 +152,7 @@ function CaseStudyShowcase({ caseStudyId, compact = false }) {
       )}
 
       {/* Results */}
-      {results && results.length > 0 && (
+      {!detailsOnRequest && results && results.length > 0 && (
         <div className="case-study-showcase__section">
           <h3 className="case-study-showcase__section-label">Results</h3>
           <div className="case-study-showcase__results">
@@ -165,7 +167,7 @@ function CaseStudyShowcase({ caseStudyId, compact = false }) {
       )}
 
       {/* Gallery */}
-      {gallery && gallery.length > 0 && (
+      {!detailsOnRequest && gallery && gallery.length > 0 && (
         <div className="case-study-showcase__section">
           <h3 className="case-study-showcase__section-label">Gallery</h3>
           <div className="case-study-showcase__gallery">

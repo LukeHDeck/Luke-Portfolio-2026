@@ -1,9 +1,7 @@
 import { useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
+import { MAPBOX_TOKEN, MAPBOX_STYLE, hasMapboxToken } from '../config/mapbox';
 import { startSpinAnimation, adjustSpinSpeed } from '../utils/mapHelpers';
-
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
-const MAPBOX_STYLE = 'mapbox://styles/deckdog/cmikq7w36000v01s03jrwbymo';
 
 /**
  * Decorative globe component for the landing page.
@@ -22,6 +20,7 @@ function Globe({ hoverState = 'none' }) {
   useEffect(() => {
     if (!containerRef.current) return;
     if (!mapboxgl.supported()) return;
+    if (!hasMapboxToken()) return;
 
     mapboxgl.accessToken = MAPBOX_TOKEN;
 
@@ -79,7 +78,10 @@ function Globe({ hoverState = 'none' }) {
 
   return (
     <div className="globe-wrapper" aria-hidden="true">
-      <div className="globe-container" ref={containerRef} />
+      <div
+        className={`globe-container${hasMapboxToken() ? '' : ' globe-container--placeholder'}`}
+        ref={containerRef}
+      />
     </div>
   );
 }
